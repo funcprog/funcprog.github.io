@@ -1,0 +1,21 @@
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  <ol class="list-unstyled">
+    {% for post in site.posts %}
+      <li> {{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a> </li>
+    {% endfor %}
+  </ol>
+</div>
+<div class="sidebar-module">
+    <h4>Archives</h4>
+    <ol class="list-unstyled">
+    </ol>
+</div>
+<div class="sidebar-module">
+    <h4>Elsewhere</h4>
+    <ol class="list-unstyled">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+    </ol>
+</div>
